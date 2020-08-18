@@ -1,5 +1,6 @@
 ### Hi there 👋
 
+[![img](https://i.imgur.com/U7jekWQ.jpg?1)](https://arindam31.github.io)
 <!--
 **arindam31/arindam31** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
