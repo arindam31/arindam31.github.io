@@ -99,23 +99,134 @@ body{
   font-size: 10px;
 }
 
+/* Timeline related css */
+.timeline{
+  margin-top:20px;
+  position:relative;
+  
+}
+
+.timeline:before{
+  position:absolute;
+  content:'';
+  width:4px;
+  height:calc(100% + 10px);
+  background: rgb(220, 231, 238);
+  left:14px;
+  top:5px;
+  border-radius:4px;
+}
+
+.timeline-month{
+  position:relative;
+  padding:4px 15px 4px 10px;
+  background-color:#dee0e3;
+  display:inline-block;
+  width:auto;
+  border-radius:40px;
+  border:1px solid #17191B;
+  border-right-color:black;
+  margin-bottom:30px;
+}
+
+
+.timeline-month span{
+  position:absolute;
+  top:-1px;
+  left:calc(100% - 10px);
+  z-index:-1;
+  white-space:nowrap;
+  display:inline-block;
+  background-color:#111;
+  padding:4px 10px 4px 20px;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  border:1px solid black;
+  box-sizing:border-box;
+}
+
+.timeline-date{
+  margin-bottom:15px;
+  padding:2px 15px;
+  background:linear-gradient(#74cae3, #5bc0de 60%, #4ab9db);
+  position:relative;
+  display:inline-block;
+  border-radius:20px;
+  border:1px solid #17191B;
+  color:#fff;
+text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+
+
+.timeline-section{
+  padding-left:35px;
+  display:block;
+  position:relative;
+  margin-bottom:30px;
+}
+
+.timeline-section:before{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:1px;
+  background-color:#444950;
+  top:12px;
+  left:20px;
+}
+
+.timeline-box{
+  position:relative;
+  
+ background-color:rgba(230, 223, 245, 0.94);
+  border-radius:15px;
+  border-top-left-radius:0px;
+  border-bottom-right-radius:0px;
+  border:1px solid #17191B;
+  transition:all 0.3s ease;
+  overflow:hidden;
+}
+
+
+.box-title{
+  padding:5px 15px;
+  border-bottom: 1px solid #17191B;
+}
+
+.box-title i{
+  margin-right:5px;
+}
+
+.box-content{
+  padding:5px 15px;
+  background-color:rgba(245, 244, 247, 0.94);
+}
+
+.box-content strong{
+  color:rgba(128, 79, 235, 0.94);
+  font-style:inherit;
+  margin-right:5px;
+}
+
+.box-item{
+  margin-bottom:5px;
+}
+
+.box-footer{
+  padding:5px 15px;
+  border-top: 1px solid #17191B;
+  background-color:#444950;
+  text-align:right;
+  font-style:italic;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .mypic {
         width: 30px;
         height: 30px;
         object-fit: contain;
         border-radius: 25px;
-    }
-  }
-
-@media only screen and (max-width: 600px) {
-    #mycard2 {
-        border: 2px solid rgb(121, 121, 213);
-        border-radius: 25px;
-        background: rgb(121, 121, 213);
-        color: white;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-        font-size: 10px;       
     }
   }
 
