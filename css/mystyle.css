@@ -3,8 +3,40 @@ body{
 }
 
 #myline {
-    background: rgba(56, 56, 137, 0.94);
+  background: rgba(56, 56, 137, 0.94);
 	height: 20px;
+}
+
+.navbartitle {
+  color: white;
+  background: rgba(121, 121, 213, 0.94);
+  height: auto;
+  width: auto;
+  z-index: -1;
+  padding-top: 4px;
+  padding-left: 10px;
+  justify-content:flex-start;
+  position: relative;
+}
+.navbarLinks {
+  background: rgba(242, 242, 245, 0.94);
+  justify-content:flex-start;
+}
+
+.picrow{
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.mypic {
+  width: 130px;
+  height: 125px;
+  object-fit:cover;
+  border-radius: 25px;
+  z-index: 0;
+  position: absolute;
+  top: 25px;
 }
 
 #myprofilecard {
@@ -71,12 +103,6 @@ body{
     overflow: hidden;
   }
 
-.mypic {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    border-radius: 25px;
-}
 
 .links_box {
     width: 100%;
