@@ -1,6 +1,7 @@
 export type CategoryName =
   | "Database"
   | "Backend Framework"
+  | "Frontend Framework"
   | "Cloud Services"
   | "Container Technologies"
   | "Testing"
@@ -15,6 +16,7 @@ export type Skill = {
 export const categories: { name: CategoryName; icon?: string }[] = [
     { name: "Database" },
     { name: "Backend Framework" },
+    { name: "Frontend Framework" },
     { name: "Cloud Services" },
     { name: "Container Technologies" },
     { name: "Testing" },
@@ -38,6 +40,11 @@ export const skills: Skill[] = [
         title: "FastAPI",
         description: "Fastest ASGI backend framework with buildin  swagger support.",
         category: "Backend Framework"
+    },
+    {
+        title: "React",
+        description: "Frontend framework.",
+        category: "Frontend Framework"
     },
     {
         title: "Pytest",
@@ -78,5 +85,10 @@ export const skills: Skill[] = [
         title: "Python",
         description: "Programming/Scripting Langauge.",
         category: "Languages",
+    },
+    {
+        title: "SQL Alchemy",
+        description: "ORM to query database.",
+        category: "Database",
     },
 ];

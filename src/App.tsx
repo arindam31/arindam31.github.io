@@ -11,8 +11,8 @@ export default function App() {
       <main className="p-4  max-w-4xl mx-auto space-y-12">
         <IntroSection />
         <SkillSection />
-        <ProjectSection />
         <WorkHistorySection />
+        <ProjectSection />
       </main>
     </>
   );
