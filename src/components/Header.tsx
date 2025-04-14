@@ -21,6 +21,9 @@ export default function Header() {
             <li>
               <a href="#experience" className="hover:text-blue-600 transition-colors duration-200">Experience</a>
             </li>
+            <li>
+              <a href="#contact" className="hover:text-blue-600 transition-colors duration-200">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
