@@ -3,6 +3,7 @@ import ProjectSection from "./components/ProjectsSection"
 import IntroSection from "./components/IntroSection";
 import SkillSection from "./components/SkillsSection";
 import WorkHistorySection from "./components/WorkHistorySection";
+import ContactSection from "./components/ContactSection";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <SkillSection />
         <WorkHistorySection />
         <ProjectSection />
+        <ContactSection />
       </main>
     </>
   );
