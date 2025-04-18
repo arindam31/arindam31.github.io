@@ -10,23 +10,17 @@ export default function IntroSection() {
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
           Hey, I'm Arindam 👋
         </h1>
-        <p className="text-xl text-gray-600 max-w-xl mx-auto md:mx-0">
-          I’m a Software Professional with a penchant for working with Python.
-          I have been in roles of Python developer in Test (SDET) , Data Analyst, and lately, Senior Backend Engineer
+        <section>
+          <p className="text-xl text-gray-600 max-w-xl mx-auto md:mx-0">
+            I’ve been hanging out with Python since 2012 — it’s my 
+            favorite sidekick for solving problems and building 
+            things that make life easier. I use Django, FastAPI, 
+            or Flask to whip up REST APIs, and I’m a big fan of writing tests (yes, really!) 
+            with <code>unittest</code>. You’ll usually find me poking around GitHub or 
+            answering questions on Stack Overflow just for fun.
+          </p>
+        </section>
 
-          I have helped companies stand on the shoulders of products I created, nurtured and delivered to clients.
-        </p>
-
-        <p className="text-xl text-gray-600 max-w-xl mx-auto md:mx-0">
-        In my last 2 jobs spanning 3 years as a Senior Backend developer, I build 
-          scalable web apps using Django. These products are in production at the customer's site.          
-        </p>
-        <p className="text-xl text-gray-600 max-w-xl mx-auto md:mx-0">
-        I love clean testable code, complete test automation of APIs and detailed documentation.
-
-        I like to work in a process where I can plan my tasks, divide them into parts and deliver
-        as per goals defined.
-        </p>
         {/* Profile photo */}
       <div className="flex-1 flex justify-center">
           <img

@@ -30,6 +30,12 @@ export const workHistory: WorkItem[] = [
         skills:  [
             requireSkill("Django"),
             requireSkill("Docker"),
+            requireSkill("Restful APIs"),
+            requireSkill("AWS"),
+            requireSkill("Postgres"),
+            requireSkill("Redis"),
+            requireSkill("Sentry"),
+            requireSkill("Celery"),
         ]
     },
     {
@@ -41,6 +47,7 @@ export const workHistory: WorkItem[] = [
         skills:  [
             requireSkill("Django"),
             requireSkill("Docker"),
+            requireSkill("Restful APIs"),
         ]
     },
     {
@@ -53,20 +60,21 @@ export const workHistory: WorkItem[] = [
             requireSkill("Python"),
             requireSkill("Docker"),
             requireSkill("PyTest"),
+            requireSkill("Prometheus"),
+            requireSkill("Grafana"),            
         ]
     },
     {
         title: "Principle Engineer",
         company: "IFM Electronic GmbH",
-        description: "Power Industry testing and diagnosis instruments",
+        description: "Electronic sensors and devices for automation.",
         period: "March 2014 - September 2019",
         location: "Tettnang, Germany",
         skills:  [
             requireSkill("Python"),
             requireSkill("unittest"),
-            requireSkill("Django"),
-            requireSkill("Flask"),
-        ]
+            requireSkill("Test Framework Designing"),
+                ]
     },
     {
         title: "Python developer in Test Automation",

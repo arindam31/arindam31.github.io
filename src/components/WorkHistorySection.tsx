@@ -10,8 +10,11 @@ export default function WorkHistorySection() {
                 {workHistory.map((job, index) => (
                     <li key={index} className="relative">
                         <div className="absolute w-3 h-3 bg-blue-600 rounded-full left-[-1.8rem] top-1.5"></div>
-                        <h3 className="text-lg font-bold">{job.title}</h3>
-                        <p className="text-sm text-gray-500">{job.company} • {job.period}</p>
+                        <h3 className="text-lg font-bold">
+                            {job.title}
+                            </h3>
+                        <p className="text-sm text-gray-500">
+                            {job.company} • {job.period}</p>
                         <p className="text-sm text-gray-500">{job.location}</p>
                         {job.description && (
                             <p className="text-gray-600 mt-1">{job.description}</p>
