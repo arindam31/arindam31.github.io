@@ -2,7 +2,9 @@ import { skills, Skill } from "../data/skills";
 
 export default function SkillSection() {
   function mapSkills(skill: Skill, index: number) {
+    if (skill.show === false) return null;
     return (
+      
       <li
         key={index}
         className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-m font-medium"
