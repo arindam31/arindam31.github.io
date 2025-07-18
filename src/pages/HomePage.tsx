@@ -6,11 +6,14 @@ import WorkHistorySection from "../components/WorkHistorySection";
 import ContactSection from "../components/ContactSection";
 
 const testingDetails =
-  "I have been hanging out with Python since 2012 — my \
-favorite sidekick for solving problems and building things that make life easier. \
- I use Django, FastAPI, or Flask to whip up REST APIs, and I’m a big fan of writing tests \
- (yes, really!) with unittest. You’ll usually find me poking around GitHub or answering \
- questions on Stack Overflow just for fun.";
+  "Welcome to my cozy corner on the internet. \
+I’m not here to sell anything — just to share. \
+Over the years, I’ve built projects that reflect how I think, \
+solve problems, and have fun with code. This site is a space to \
+show you those projects — complete, imperfect, and real — \
+so you can get a broader idea of the kind of solutions I enjoy building. \
+It’s less of a portfolio, more of a playground. And if you happen to find \
+something useful, inspiring, or just interesting — even better.";
 
 export default function HomePage() {
   return (

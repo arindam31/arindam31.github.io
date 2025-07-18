@@ -62,13 +62,4 @@ export const projects: Project[] = [
     ],
     
   },
-  {
-    title: "django-market",
-    description: "Complete ecommerce app to cater to any kind of product.",
-    url: "https://github.com/arindam31/django-market",
-    skills: [
-      requireSkill("Django"),
-      requireSkill("Docker"),
-    ]
-  }
 ];
