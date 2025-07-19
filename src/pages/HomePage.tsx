@@ -25,7 +25,7 @@ export default function HomePage() {
             showImage={true}
           />
         <SkillSection />
-        <WorkHistorySection />
+        <WorkHistorySection limit={2} />
         <ProjectSection />
         <ContactSection />
       </main>
