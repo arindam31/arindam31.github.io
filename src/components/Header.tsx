@@ -16,7 +16,6 @@ export default function Header() {
         {/* Full nav on medium+ screens */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
           <li><a href="#intro" className="hover:text-blue-600 transition">Intro</a></li>
-          <li><a href="#work" className="hover:text-blue-600 transition">Work History</a></li>
           <li><a href="#projects" className="hover:text-blue-600 transition">Projects</a></li>
           <Link
             to="/testing-demos"
@@ -25,7 +24,12 @@ export default function Header() {
             Testing Projects
           </Link>
           <li><a href="#skills" className="hover:text-blue-600 transition">Skills</a></li>
-          <li><a href="#experience" className="hover:text-blue-600 transition">Experience</a></li>
+          <Link
+            to="/work"
+            className="hover:text-blue-600 transition"
+          >
+            Work History
+          </Link>
           <li><a href="#contact" className="hover:text-blue-600 transition">Contact</a></li>
         </ul>
         <div className="flex items-center gap-3">

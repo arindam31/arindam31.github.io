@@ -1,4 +1,3 @@
-import React from "react";
 
 interface IntroSectionProps {
   headerText: string;
@@ -14,7 +13,7 @@ export default function IntroSection({
   return (
     <section
       id="intro"
-      className="w-full rounded-lg shadow bg-gradient-to-br from-blue-50 to-white 
+      className="w-full rounded-lg shadow bg-gradient-to-br from-blue-300 to-white 
       dark:from-gray-800 dark:to-gray-800 
       text-gray-800 dark:text-gray-100 py-10
       border border-gray-200 dark:border-gray-700"
