@@ -25,7 +25,7 @@ export const workHistory: WorkItem[] = [
         title: "Senior Software Engineer",
         company: "Neke-Neke GmbH",
         description: "Medical softwares and Software services",
-        period: "April 2023 - December 2025",
+        period: "April 2023 - December 2024",
         location: "Salzburg (Full remote)",
         skills:  [
             requireSkill("Django"),

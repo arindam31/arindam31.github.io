@@ -10,7 +10,7 @@ export type CategoryName =
   | "Monitoring & Observability"
   | "Languages";
 
-export type Skill = {
+export type SkillProps  = {
     title: string;
     description: string;
     category: CategoryName;
@@ -27,7 +27,7 @@ export const categories: { name: CategoryName; icon?: string }[] = [
     { name: "Languages" },
   ];
 
-export const skills: Skill[] = [
+export const skills: SkillProps[] = [
     {
         title: "Django",
         description: "Django comes with batterries included for faster deployments. \

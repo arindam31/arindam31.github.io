@@ -1,10 +1,13 @@
 import Header from "../components/Header";
 import IntroSection from "../components/IntroSection";
-import TestingProject from "../components/TestingProject"
+import TestingProject from "../components/TestingProject";
 
-const testingDetails = "This page demos some Testing and automation demos.";
 
-export default function HomePage() {
+const testingDetails = "This page demos some Testing and automation results. \
+UI tests with Playwright. Integration tests for GRPC running OEM. \
+I try to show how can we test these and what can we cover.";
+
+export default function TestingProjecPage() {
   return (
     <>
       <Header />
@@ -17,7 +20,7 @@ export default function HomePage() {
         <TestingProject
           title="Automated Testing with Pytest + Allure"
           description="A simple framework to run daily test jobs and generate reports."
-          tools={["Pytest", "Allure", "Buildbot", "gRPC"]}
+          skills={["Pytest", "Allure", "gRPC"]}
           results={[
             { type: "image", content: "/screenshots/imt/admin.png" },
             {
