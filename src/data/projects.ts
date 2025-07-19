@@ -1,28 +1,36 @@
-import { Skill, skills } from "../data/skills";
+import { SkillProps, skills } from "../data/skills";
 
-export type Project = {
+
+export type ProjectType = {
   title: string;
+  shortDescription?: string; // for homepage summary
   description: string;
-  skills?: Skill[];
+  features?: string[]; // bullets of capabilities
+  skills?: SkillProps[];
   testStatusGithub?: string;
   images?: string[];
   url?: string;
+  dockerRunCommand?: string; // if you provide a Docker image
+  github?: string; // shortcut to source
+  slug: string; // used to route to `/project/:slug`
 };
 
-function getSkillByTitle(title: string): Skill | undefined {
+
+function getSkillByTitle(title: string): SkillProps | undefined {
   return skills.find((skill) => skill.title.toLowerCase() === title.toLowerCase());
 }
 
-function requireSkill(title: string): Skill {
+function requireSkill(title: string): SkillProps {
   const skill = getSkillByTitle(title);
   if (!skill) throw new Error(`Skill not found: ${title}`);
   return skill;
 }
 
 
-export const projects: Project[] = [
+export const projects: ProjectType[] = [
   {
     title: "Interview Management System",
+    slug: "interview-management-system",
     description: "Manage Applications. Schedule Interview rounds by availability. Create Assessment forms. \
         View appointments in calendar. Receive alerts in email.",
     url: "https://github.com/arindam31/Interview_management",
@@ -45,6 +53,7 @@ export const projects: Project[] = [
   },
   {
     title: "City Weather App",
+    slug: "city-weather-app",
     description: "This project demonstrates how to use Flask to write RESTful APIs with complete swagger documentation.",
     url: "https://github.com/arindam31/CityWeatherWithFlask",
     testStatusGithub: "https://img.shields.io/github/actions/workflow/status/arindam31/CityWeatherWithFlask/ci.yml?branch=master",

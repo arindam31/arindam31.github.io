@@ -7,7 +7,6 @@ import ContactSection from "../components/ContactSection";
 
 const testingDetails =
   "Welcome to my cozy corner on the internet. \
-I’m not here to sell anything — just to share. \
 Over the years, I’ve built projects that reflect how I think, \
 solve problems, and have fun with code. This site is a space to \
 show you those projects — complete, imperfect, and real — \
@@ -19,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="p-4 max-w-4xl mx-auto space-y-12">
+      <main className="max-w-screen-lg mx-auto p-6 space-y-12">
         <IntroSection
             headerText="Hey, I'm Arindam 👋"
             bodyText={testingDetails}

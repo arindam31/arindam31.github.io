@@ -1,17 +1,18 @@
-import ToolList from "./ToolList";
+import SkillSection from "../components/SkillsSection";
+
 import ResultSection from "./ResultSection";
 
 
 export default function TestingProject({
   title,
   description,
-  tools,
+  skills,
   results,
   learnings,
 }: {
   title: string;
   description: string;
-  tools: string[];
+  skills: string[];
   results: { type: "image" | "link" | "text"; content: string }[];
   learnings?: string;
 }) {
@@ -22,7 +23,7 @@ export default function TestingProject({
         <p className="text-gray-600">{description}</p>
       </header>
 
-      <ToolList tools={tools} />
+      <SkillSection skills={skills} />
 
       <ResultSection results={results} />
 
