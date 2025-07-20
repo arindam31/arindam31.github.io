@@ -23,17 +23,18 @@ export default function TestingProjecPage() {
           using pytest and allure. Project shows use of allure to mark tests with TestCase ids, severity, and tags"
           skills={["Pytest", "Allure", "gRPC"]}
           results={[
-            { type: "image", content: "/screenshots/imt/admin.png" },
+            { type: "image", content: "/screenshots/Pytest_Projects/grpc_test_suite.png" },
             {
               type: "link",
               content: "https://arindam31.github.io/PyTest_All_Examples/embedded_device_testing/",
             },
             {
               type: "text",
-              content: "Results available in allure report. Please visit link.",
+              content: "Test Report available after every test run. Please visit link.",
             },
           ]}
-          learnings="Allure integration with Pytest, tags for TestCase marking...I find this very useful in tracking test coverage."
+          learnings="Using Allure with Pytest provides better reports with more options for tagging tests. 
+          I found this very useful in tracking test coverage."
         />
       </main>
     </>

@@ -4,7 +4,7 @@ export default function ResultSection({
   results: { type: "image" | "link" | "text"; content: string }[];
 }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-1">
       <h4 className="text-md font-semibold text-gray-700">Results</h4>
       {results.map((res, idx) => {
         if (res.type === "image") {
