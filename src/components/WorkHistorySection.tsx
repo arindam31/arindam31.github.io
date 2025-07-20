@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { workHistory } from "../data/workHistory";
 import WorkPlace from "./WorkPlace";
+
 
 export default function WorkExperienceSection({ limit }: { limit?: number }) {
   const worksToShow = limit ? workHistory.slice(0, limit) : workHistory;
@@ -15,13 +17,13 @@ export default function WorkExperienceSection({ limit }: { limit?: number }) {
       </div>
 
       {limit && (
-        <div className="mt-4 text-right">
-          <a
-            href="/work"
+        <div className="mt-4 text-right">          
+          <Link
+            to="/work"
             className="text-blue-600 hover:underline text-sm font-medium"
           >
             See all work experience →
-          </a>
+          </Link>
         </div>
       )}
     </section>
