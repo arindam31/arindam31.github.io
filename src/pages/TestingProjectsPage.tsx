@@ -19,13 +19,14 @@ export default function TestingProjecPage() {
         />
         <TestingProject
           title="Automated Testing with Pytest + Allure"
-          description="A simple framework to run daily test jobs and generate reports."
+          description="Test services on a embedded hardware system running gRPC, 
+          using pytest and allure. Project shows use of allure to mark tests with TestCase ids, severity, and tags"
           skills={["Pytest", "Allure", "gRPC"]}
           results={[
             { type: "image", content: "/screenshots/imt/admin.png" },
             {
               type: "link",
-              content: "https://arindam31.github.io/embedded_device_testing/",
+              content: "https://arindam31.github.io/PyTest_All_Examples/embedded_device_testing/",
             },
             {
               type: "text",
