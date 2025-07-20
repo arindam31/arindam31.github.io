@@ -2,8 +2,8 @@ import Header from "../components/Header";
 import IntroSection from "../components/IntroSection";
 import TestingProject from "../components/TestingProject";
 
-
-const testingDetails = "This page demos some Testing and automation results. \
+const testingDetails =
+  "This page demos some Testing and automation results. \
 UI tests with Playwright. Integration tests for GRPC running OEM. \
 I try to show how can we test these and what can we cover.";
 
@@ -25,13 +25,15 @@ export default function TestingProjecPage() {
             { type: "image", content: "/screenshots/imt/admin.png" },
             {
               type: "link",
-              content: "https://arindam31.github.io/test-report/index.html",
+              content: "https://arindam31.github.io/embedded_device_testing/",
             },
-            { type: "text", content: "10 test cases passed. Runtime: 15s." },
+            {
+              type: "text",
+              content: "Results available in allure report. Please visit link.",
+            },
           ]}
-          learnings="Improved Allure integration and made report publishing part of the CI pipeline."
+          learnings="Allure integration with Pytest, tags for TestCase marking...I find this very useful in tracking test coverage."
         />
-
       </main>
     </>
   );
