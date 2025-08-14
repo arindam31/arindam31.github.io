@@ -26,7 +26,7 @@ export default function TestingProjecPage() {
             { type: "image", content: "/screenshots/Pytest_Projects/grpc_test_suite.png" },
             {
               type: "link",
-              content: "https://arindam31.github.io/PyTest_All_Examples/embedded_device_testing/",
+              content: "https://arindam31.github.io/Testing_Examples/embedded_device_testing/",
             },
             {
               type: "text",
