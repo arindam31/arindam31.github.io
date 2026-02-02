@@ -23,7 +23,7 @@ export default function Header() {
           >
             Testing Projects
           </Link>
-          <li><a href="#skills" className="hover:text-blue-600 transition">Skills</a></li>
+          <Link to="/certifications" className="hover:text-blue-600 transition">Certifications</Link>
           <Link
             to="/work"
             className="hover:text-blue-600 transition"
@@ -53,7 +53,7 @@ export default function Header() {
             <li><a href="#intro" className="block hover:text-blue-600">Intro</a></li>
             <li><a href="#work" className="block hover:text-blue-600">Work History</a></li>
             <li><a href="#projects" className="block hover:text-blue-600">Projects</a></li>
-            <li><a href="#skills" className="block hover:text-blue-600">Skills</a></li>
+            <li><Link to="/certifications" className="block hover:text-blue-600">Certifications</Link></li>
             <li><a href="#experience" className="block hover:text-blue-600">Experience</a></li>
             <li><a href="#contact" className="block hover:text-blue-600">Contact</a></li>
           </ul>

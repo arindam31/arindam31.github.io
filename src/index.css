@@ -1,7 +1,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @import "tailwindcss";
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 @theme {
-  --font-display: "Satoshi", "sans-serif";
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --breakpoint-3xl: 1920px;
   --color-avocado-100: oklch(0.99 0 0);
   --color-avocado-200: oklch(0.98 0.04 113.22);
@@ -11,6 +13,44 @@
   --color-avocado-600: oklch(0.53 0.12 118.34);
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-  /* ... */
 }
-@import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Carousel styling fixes */
+.project-carousel .carousel .slide {
+  background: transparent;
+}
+
+.project-carousel .carousel .control-dots {
+  margin: 8px 0;
+}
+
+.project-carousel .carousel .control-dots .dot {
+  background: #9ca3af;
+  box-shadow: none;
+}
+
+.project-carousel .carousel .control-dots .dot.selected {
+  background: #3b82f6;
+}
+
+.dark .project-carousel .carousel .control-dots .dot {
+  background: #4b5563;
+}
+
+.dark .project-carousel .carousel .control-dots .dot.selected {
+  background: #60a5fa;
+}
+
+.project-carousel .carousel .control-arrow {
+  opacity: 0.6;
+}
+
+.project-carousel .carousel .control-arrow:hover {
+  opacity: 1;
+}

@@ -1,16 +1,23 @@
 import { projects } from "../data/projects";
 import Project from "./project";
 
+interface ProjectSectionProps {
+  showHeader?: boolean;
+}
 
-export default function ProjectSection() {
+export default function ProjectSection({ showHeader = false }: ProjectSectionProps) {
   return (
-    <section className="mb-8" id="projects">
-      <h2 className="text-2xl font-semibold mb-4">Showcase Projects</h2>
-      <ul className="space-y-4">
+    <div id="projects">
+      {showHeader && (
+        <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+          Showcase Projects
+        </h2>
+      )}
+      <div className="space-y-6">
         {projects.map((project) => (
           <Project key={project.slug} project={project} skills={project.skills || []} />
         ))}
-      </ul>
-    </section>
+      </div>
+    </div>
   );
 }

@@ -2,22 +2,33 @@ import { Link } from "react-router-dom";
 import { workHistory } from "../data/workHistory";
 import WorkPlace from "./WorkPlace";
 
+interface WorkHistorySectionProps {
+  limit?: number;
+  showHeader?: boolean;
+}
 
-export default function WorkExperienceSection({ limit }: { limit?: number }) {
+export default function WorkExperienceSection({
+  limit,
+  showHeader = false,
+}: WorkHistorySectionProps) {
   const worksToShow = limit ? workHistory.slice(0, limit) : workHistory;
 
   return (
-    <section id="work-experience" className="space-y-8 max-w-5xl mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
+    <div id="work-experience" className="space-y-6">
+      {showHeader && (
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+          Work Experience
+        </h2>
+      )}
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         {worksToShow.map((work, idx) => (
           <WorkPlace key={idx} work={work} />
         ))}
       </div>
 
-      {limit && (
-        <div className="mt-4 text-right">          
+      {limit && limit < workHistory.length && (
+        <div className="text-right">
           <Link
             to="/work"
             className="text-blue-600 hover:underline text-sm font-medium"
@@ -26,6 +37,6 @@ export default function WorkExperienceSection({ limit }: { limit?: number }) {
           </Link>
         </div>
       )}
-    </section>
+    </div>
   );
 }

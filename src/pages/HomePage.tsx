@@ -5,30 +5,46 @@ import SkillSection from "../components/SkillsSection";
 import WorkHistorySection from "../components/WorkHistorySection";
 import ContactSection from "../components/ContactSection";
 
-const testingDetails =
-  "Welcome to my cozy corner on the internet. \
-Over the years, I’ve built projects that reflect how I think, \
-solve problems, and have fun with code. This site is a space to \
-show you those projects — complete, imperfect, and real — \
-so you can get a broader idea of the kind of solutions I enjoy building. \
-It’s less of a portfolio, more of a playground. And if you happen to find \
-something useful, inspiring, or just interesting — even better.";
+const introText =
+  "QA Engineer & Python Developer with 15+ years of experience in test automation, backend development, and DevOps. I build reliable software and the tools to test it.";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Header />
-      <main className="max-w-screen-lg mx-auto p-6 space-y-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+        {/* Intro */}
         <IntroSection
-            headerText="Hey, I'm Arindam 👋"
-            bodyText={testingDetails}
-            showImage={true}
-          />
+          headerText="Hey, I'm Arindam"
+          bodyText={introText}
+          showImage={true}
+        />
+
+        {/* Divider */}
+        <hr className="my-8 border-gray-200 dark:border-gray-700" />
+
+        {/* Skills */}
         <SkillSection />
-        <WorkHistorySection limit={2} />
-        <ProjectSection />
+
+        {/* Work History */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+            Recent Experience
+          </h2>
+          <WorkHistorySection limit={2} />
+        </section>
+
+        {/* Projects */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
+            Featured Projects
+          </h2>
+          <ProjectSection />
+        </section>
+
+        {/* Contact */}
         <ContactSection />
       </main>
-    </>
+    </div>
   );
 }

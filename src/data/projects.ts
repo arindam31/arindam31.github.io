@@ -51,24 +51,4 @@ export const projects: ProjectType[] = [
       "/screenshots/imt/test_coverage_report.png",
     ]
   },
-  {
-    title: "City Weather App",
-    slug: "city-weather-app",
-    description: "This project demonstrates how to use Flask to write RESTful APIs with complete swagger documentation.",
-    url: "https://github.com/arindam31/CityWeatherWithFlask",
-    testStatusGithub: "https://img.shields.io/github/actions/workflow/status/arindam31/CityWeatherWithFlask/ci.yml?branch=master",
-    skills: [
-      requireSkill("Flask"),
-      requireSkill("Docker"),
-      requireSkill("React"),
-      requireSkill("SQL Alchemy"),
-    ],
-    images:[
-      "/screenshots/CityWeatherFlask/launch_page.png",
-      "/screenshots/CityWeatherFlask/search_result_existing_past_data.png",
-      "/screenshots/CityWeatherFlask/todays_weather_demo.png",
-      "/screenshots/CityWeatherFlask/Swagger_docs.png",
-    ],
-    
-  },
 ];
