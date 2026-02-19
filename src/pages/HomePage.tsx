@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import ProjectSection from "../components/ProjectsSection";
 import IntroSection from "../components/IntroSection";
 import SkillSection from "../components/SkillsSection";
 import WorkHistorySection from "../components/WorkHistorySection";
@@ -24,7 +23,7 @@ export default function HomePage() {
         <hr className="my-8 border-gray-200 dark:border-gray-700" />
 
         {/* Skills */}
-        <SkillSection />
+        <SkillSection compact />
 
         {/* Work History */}
         <section className="mb-12">
@@ -32,14 +31,6 @@ export default function HomePage() {
             Recent Experience
           </h2>
           <WorkHistorySection limit={2} />
-        </section>
-
-        {/* Projects */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-            Featured Projects
-          </h2>
-          <ProjectSection />
         </section>
 
         {/* Contact */}

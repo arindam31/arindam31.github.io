@@ -36,10 +36,29 @@ const skillGroups: SkillGroup[] = [
 interface SkillSectionProps {
   skills?: string[];
   showHeader?: boolean;
+  compact?: boolean;
 }
 
-export default function SkillSection({ skills, showHeader = true }: SkillSectionProps) {
+export default function SkillSection({ skills, showHeader = true, compact = false }: SkillSectionProps) {
   const visibleSkills = defaultSkills.filter((skill) => skill.show !== false);
+
+  // Compact mode: all skills as a flat inline tag list
+  if (compact) {
+    return (
+      <section className="mb-6" id="skills">
+        {showHeader && (
+          <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+            Skills
+          </h2>
+        )}
+        <ul className="flex flex-wrap gap-2">
+          {visibleSkills.map((skill) => (
+            <Skill key={skill.title} title={skill.title} />
+          ))}
+        </ul>
+      </section>
+    );
+  }
 
   // If custom skills list is provided, use simple flat display
   if (skills) {
