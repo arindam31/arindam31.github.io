@@ -30,7 +30,7 @@ export default function Header() {
           >
             Work History
           </Link>
-          <li><a href="#contact" className="hover:text-blue-600 transition">Contact</a></li>
+          <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
         </ul>
         <div className="flex items-center gap-3">
           <DarkModeToggle />
@@ -55,7 +55,7 @@ export default function Header() {
             <li><a href="#projects" className="block hover:text-blue-600">Projects</a></li>
             <li><Link to="/certifications" className="block hover:text-blue-600">Certifications</Link></li>
             <li><a href="#experience" className="block hover:text-blue-600">Experience</a></li>
-            <li><a href="#contact" className="block hover:text-blue-600">Contact</a></li>
+            <li><Link to="/contact" className="block hover:text-blue-600">Contact</Link></li>
           </ul>
         </div>
       )}
