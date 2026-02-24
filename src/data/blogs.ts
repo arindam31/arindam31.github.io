@@ -10,12 +10,12 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "welcome-to-my-blog",
-    title: "Welcome to My Blog",
+    slug: "pytest-run-selected-tests",
+    title: "Running Selected Pytest Tests — The Right Way",
     date: "February 2026",
     description:
-      "An introduction to this blog: what I plan to write about, the tech behind this site, and a live showcase of all supported markdown features.",
-    tags: ["Python", "Testing", "React"],
-    readTimeMinutes: 4,
+      "Two practical methods for running a specific subset of pytest tests: direct path selection and keyword expressions (-k flag). Covers 7 real-world cases from basic OR/AND logic to class-scoped filtering.",
+    tags: ["Python", "Pytest", "Testing"],
+    readTimeMinutes: 3,
   },
 ];
