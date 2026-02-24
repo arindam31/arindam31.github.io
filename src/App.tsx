@@ -4,6 +4,8 @@ import TestingProjectPage from "./pages/TestingProjectsPage"
 import WorkExperiencePage from "./pages/WorkExperiencePage";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
+import BlogsPage from "./pages/BlogsPage";
+import BlogPostPage from "./pages/BlogPostPage";
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
       <Route path="/work" element={<WorkExperiencePage  />} />
       <Route path="/certifications" element={<CertificationsPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/blogs" element={<BlogsPage />} />
+      <Route path="/blogs/:slug" element={<BlogPostPage />} />
     </Routes>
   );
 }
