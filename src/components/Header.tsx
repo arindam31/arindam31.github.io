@@ -7,14 +7,14 @@ export default function Header() {
 
     return (
        <header className="sticky top-0 bg-white/80 backdrop-blur border-b border-gray-200 z-50 shadow-sm">
-      <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between flex-nowrap">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between flex-nowrap">
         {/* Logo / Site Title */}
         <a href="/" className="text-xl font-bold tracking-tight text-gray-900 hover:text-blue-600 transition-colors">
           Arindam's Portfolio          
         </a>
       
         {/* Full nav on medium+ screens */}
-        <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+        <ul className="hidden md:flex space-x-5 text-sm font-medium text-gray-700">
           <li><a href="#intro" className="hover:text-blue-600 transition">Intro</a></li>
           <li><a href="#projects" className="hover:text-blue-600 transition">Projects</a></li>
           <Link
@@ -31,7 +31,7 @@ export default function Header() {
             Work History
           </Link>
           <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
-          <Link to="/blogs" className="hover:text-blue-600 transition">Blog</Link>
+          <Link to="/blogs" className="hover:text-blue-600 transition">Blogs</Link>
         </ul>
         <div className="flex items-center gap-3">
           <DarkModeToggle />
@@ -57,7 +57,7 @@ export default function Header() {
             <li><Link to="/certifications" className="block hover:text-blue-600">Certifications</Link></li>
             <li><a href="#experience" className="block hover:text-blue-600">Experience</a></li>
             <li><Link to="/contact" className="block hover:text-blue-600">Contact</Link></li>
-            <li><Link to="/blogs" className="block hover:text-blue-600">Blog</Link></li>
+            <li><Link to="/blogs" className="block hover:text-blue-600">Blogs</Link></li>
           </ul>
         </div>
       )}
